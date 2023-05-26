@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const Background = () => {
+const BackgroundDay = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -24,7 +24,7 @@ const Background = () => {
         options={{
           background: {
             color: {
-              value: "#131313",
+              value: "#ffffff",
             },
           },
           fpsLimit: 60,
@@ -52,10 +52,10 @@ const Background = () => {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#131313",
             },
             links: {
-              color: "#ffffff",
+              color: "#131313",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -98,4 +98,4 @@ const Background = () => {
   );
 };
 
-export default Background;
+export default BackgroundDay;

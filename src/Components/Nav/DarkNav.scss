@@ -2,7 +2,7 @@
 @use "../../Styles/partials/variables" as *;
 @use "../../Styles/partials/global" as *;
 
-.nav {
+.dark-nav {
   display: flex;
   border: $White solid 2px;
   position: relative;
@@ -32,7 +32,7 @@
     }
   }
 
-  &__night {
+  &__dark {
     height: 10vw;
   }
 
