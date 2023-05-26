@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Migra";
-  src: url("../../Assets/Font/Migra/Migra-Extrabold.otf") format("otf");
+  src: url("../../Assets/Font/Migra/Migra-Extrabold.otf") format("otf"),
+    url("../../Assets/Font/Migra/Migra-Extrabold.woff") format("woff");
   font-weight: 800;
   font-style: Extrabold;
   font-display: swap;
@@ -8,9 +9,19 @@
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url("../../Assets/Font/Neue-Montreal/NeueMontreal-Regular.ttf")
-    format("otf");
+  src: url("../../Assets/Font/Neue-Montreal/NeueMontreal-Regular.ttf"),
+    format("otf")
+      url("../../Assets/Font/Neue-Montreal/PPNeueMontreal-Medium.otf")
+      format("woff");
   font-weight: 400;
   font-style: Regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tusk";
+  src: url("../../Assets/Font/Tusker-Grotesk/TuskerGrotesk-2600Semibold.woff")
+    format("woff");
+  font-style: semibold;
   font-display: swap;
 }
