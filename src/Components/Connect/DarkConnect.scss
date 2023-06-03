@@ -1,0 +1,95 @@
+@use "../../styles/partials/typography" as *;
+@use "../../Styles/partials/variables" as *;
+@use "../../Styles/partials/global" as *;
+
+.dark-connect {
+  margin-top: 5vw;
+  &__heading {
+    color: $OffWhite;
+    font-family: Tusk;
+    font-size: 33vw;
+    font-weight: 400;
+    line-height: 33vw;
+    letter-spacing: 0.01em;
+    position: absolute;
+    z-index: 2;
+    top: 5vh;
+    margin: 0 1rem;
+    padding-top: 20vw;
+  }
+
+  &__background {
+    width: 100vw;
+    position: relative;
+    mix-blend-mode: multiply;
+
+    &-container {
+      z-index: 1;
+      position: relative;
+      height: 100vw;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 217vw;
+    background-color: rgba(19, 19, 19, 1);
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
+
+  &__button {
+    border: 0.5vw solid $White;
+    border-radius: 27px;
+    background-color: transparent;
+    margin: 1rem 0;
+    width: 85vw;
+    height: auto;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6vw;
+    line-height: 6vw;
+    text-align: center;
+    color: $OffWhite;
+    padding: 2vw;
+
+    &--contact {
+      border: 0.5vw solid $White;
+      border-radius: 27px;
+      margin: 1rem 0;
+      width: auto;
+      height: auto;
+      font-family: "Neue Montreal";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 6vw;
+      line-height: 6vw;
+      text-align: center;
+      color: $Black;
+      padding: 2vw;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    bottom: 120vw;
+    z-index: 2;
+    align-items: center;
+
+    &--small {
+      display: flex;
+      width: 85vw;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.button--alt {
+  margin: 1rem 1.25rem;
+  padding: 2vw 5vw;
+}

@@ -2,15 +2,14 @@ import "./DarkNav.scss";
 import "./LightNav.scss";
 import Night from "../../Assets/Icons/dark_mode.png";
 import Day from "../../Assets/Icons/light_mode.png";
-import DarkMushroom from "../../Assets/Icons/dark_mushroom.png";
-import LightMushroom from "../../Assets/Icons/light_mushroom.png";
-import Color from "../../Assets/Icons/mana.png";
-import DarkColor from "../../Assets/Icons/dark_mana.png";
-import LightColor from "../../Assets/Icons/light_mana.png";
-import Eraser from "../../Assets/Icons/eraser.png";
-import DarkEraser from "../../Assets/Icons/dark_eraser.png";
-import LightEraser from "../../Assets/Icons/light_eraser.png";
+import LightLinkedin from "../../Assets/Icons/light_linkedin.png";
+import DarkLinkedin from "../../Assets/Icons/dark_linkedin.png";
+import Twitter from "../../Assets/Icons/dark_twitter.png";
+import LightTwitter from "../../Assets/Icons/light_twitter.png";
+import Github from "../../Assets/Icons/github.png";
+import LightGithub from "../../Assets/Icons/light_github.png";
 import { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Nav = ({ backgroundModeClick }) => {
   const [isNightMode, setNightMode] = useState(false);
@@ -24,6 +23,14 @@ const Nav = ({ backgroundModeClick }) => {
     backgroundModeClick(); // Call the prop function passed from Home component
   };
 
+  const handleScrollTo = (elementId) => {
+    scroll.scrollTo(elementId, {
+      duration: 500,
+      smooth: true,
+      offset: -50, // Optional offset for better scroll position
+    });
+  };
+
   return (
     <nav className={`${navClassName}`}>
       <div className={`${navClassName}__left`}>
@@ -31,9 +38,39 @@ const Nav = ({ backgroundModeClick }) => {
           <h3 className={`${navClassName}__left-name`}>Anthony Quispe</h3>
         </div>
         <div className={`${navClassName}__left-pagesContainer`}>
-          <p className={`${navClassName}__left-page`}>Feed</p>
-          <p className={`${navClassName}__left-page`}>About</p>
-          <p className={`${navClassName}__left-page`}>Connect</p>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            className={`${navClassName}__left-page`}
+            onClick={() => handleScrollTo("about")}
+          >
+            About
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            className={`${navClassName}__left-page`}
+            onClick={() => handleScrollTo("projects")}
+          >
+            Projects
+          </Link>
+          <Link
+            to="connect"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            className={`${navClassName}__left-page`}
+            onClick={() => handleScrollTo("connect")}
+          >
+            Connect
+          </Link>
         </div>
       </div>
 
@@ -48,21 +85,28 @@ const Nav = ({ backgroundModeClick }) => {
           <p className={`${navClassName}__right-mode`}>Mode</p>
         </div>
         <div className={`${navClassName}__right-colorContainer`}>
-          <img
-            className={`${navClassName}__editor`}
-            src={navClassName === "dark-nav" ? DarkMushroom : LightMushroom}
-            alt="mushroom icon"
-          />
-          <img
-            className={`${navClassName}__editor`}
-            src={navClassName === "dark-nav" ? DarkColor : LightColor}
-            alt="mushroom icon"
-          />
-          <img
-            className={`${navClassName}__editor`}
-            src={navClassName === "dark-nav" ? DarkEraser : LightEraser}
-            alt="mushroom icon"
-          />
+          <Link to={"https://www.linkedin.com/in/anthonyqs/"}>
+            <img
+              className={`${navClassName}__editor`}
+              src={navClassName === "dark-nav" ? DarkLinkedin : LightLinkedin}
+              alt="Linkedin icon"
+            />
+          </Link>
+          <Link to={"https://github.com/AnthonyQuispe"}>
+            <img
+              className={`${navClassName}__editor`}
+              src={navClassName === "dark-nav" ? Github : LightGithub}
+              alt="Github icon"
+            />
+          </Link>
+
+          <Link to={"https://twitter.com/AnthonysQuispe"}>
+            <img
+              className={`${navClassName}__editor`}
+              src={navClassName === "dark-nav" ? Twitter : LightTwitter}
+              alt="Twitter icon"
+            />
+          </Link>
         </div>
       </div>
     </nav>

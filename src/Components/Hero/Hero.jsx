@@ -1,8 +1,13 @@
-import "./Hero.scss";
-import Software from "../../Assets/Icons/Softwaretext.svg";
+import "./DarkHero.scss";
+import "./LightHero.scss";
+import DarkSoftware from "../../Assets/Icons/Softwaretext.svg";
+import LightSoftware from "../../Assets/Icons/LightSoftwaretext.svg";
 import ResumePDF from "../../Assets/Images/Anthony_Quispe - Resume.pdf";
+import { useState, useEffect } from "react";
 
-const Hero = () => {
+const Hero = ({ backgroundMode }) => {
+  const [heroClassName, setHeroClassName] = useState("dark-hero");
+
   const handleResumeClick = () => {
     const link = document.createElement("a");
     link.href = ResumePDF;
@@ -14,30 +19,42 @@ const Hero = () => {
     window.location.href = "mailto:anthony.s.quispe@gmail.com";
   };
 
+  useEffect(() => {
+    setHeroClassName(backgroundMode ? "dark-hero" : "light-hero");
+  }, [backgroundMode]);
+
   return (
-    <div className="hero">
-      <h3 className="hero__title">Innovative</h3>
-      <h1 className="hero__heading">
+    <div className={`${heroClassName}`}>
+      <h3 className={`${heroClassName}__title`}>Innovative</h3>
+      <h1 className={`${heroClassName}__heading`}>
         Full Stack <br />
         Developer
       </h1>
-      <p className="hero__description--right">I AM A PASSIONATE DEVELOPER,</p>
-      <p className="hero__description">
+      <p className={`${heroClassName}__description--right`}>
+        I AM A PASSIONATE DEVELOPER,
+      </p>
+      <p className={`${heroClassName}__description`}>
         I LEVERAGE MY SKILLS AND EXPERIENCE IN TECHNOLOGY TO CRAFT INNOVATIVE
         AND EFFICIENT SOLUTIONS FOR REAL-WORLD PROBLEMS, ULTIMATELY AIMING TO
         HELP PEOPLE EFFECTIVELY.
       </p>
-      <div className="hero__button--container">
-        <button className="hero__button--resume" onClick={handleResumeClick}>
+      <div className={`${heroClassName}__button--container`}>
+        <button
+          className={`${heroClassName}__button--resume`}
+          onClick={handleResumeClick}
+        >
           RESUME
         </button>
-        <button className="hero__button" onClick={handleContactClick}>
+        <button
+          className={`${heroClassName}__button`}
+          onClick={handleContactClick}
+        >
           <img
-            className="hero__software"
-            src={Software}
+            className={`${heroClassName}__software`}
+            src={heroClassName === "dark-hero" ? DarkSoftware : LightSoftware}
             alt="software text icon"
           />
-          <p className="hero__button--text">Contact Me</p>
+          <p className={`${heroClassName}__button--text`}>Contact Me</p>
         </button>
       </div>
     </div>

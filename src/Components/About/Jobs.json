@@ -1,0 +1,34 @@
+{
+  "jobs": [
+    {
+      "jobTitle": "Project Manager",
+      "jobCompany": "Conviva",
+      "jobDate": "APR 2022 - MAR 2023 | Remote",
+      "jobSummary": "As a project manager and process owner at Conviva, I focused on improving the onboarding process to reduce new hire difficulties and minimize turnover. I collaborated with various teams, including Helpdesk, security, field tech, and EMR, to ensure a smooth implementation. By enhancing the process, my goal was to create a positive experience for new hires, increase satisfaction, and decrease turnover. Regular reporting to the business side highlighted the progress and positive impact on turnover rate."
+    },
+    {
+      "jobTitle": "Help Desk Specialist",
+      "jobCompany": "The Legacy Companies",
+      "jobDate": "OCT 2021 - APR 2022, Weston, FL",
+      "jobSummary": "Proficient in Office 365 administration, Azure and Server administration, and Citrix support.\n● Skilled in managing corporate computing environments and providing Tier 1 through Tier 3 technical support.\n● Experienced in monitoring system performance and delivering top-notch customer service to optimize user productivity and satisfaction."
+    },
+    {
+      "jobTitle": "App Support Specialist",
+      "jobCompany": "Humana",
+      "jobDate": "AUG 2021 - OCT 2021, Remote",
+      "jobSummary": "Skilled IT professional experienced in Five9, MS365, and Salesforce administration\n● Optimized business operations and enhanced user productivity through technical support and customer service\n● Managed user accounts and profiles, ticketing systems, and generated reports for timely issue resolution."
+    },
+    {
+      "jobTitle": "NOC Technician",
+      "jobCompany": "Black Box",
+      "jobDate": "2019 - 2020, Miami",
+      "jobSummary": "Monitoring the ticketing system and escalating issues to the appropriate support group\n● Logging all calls and emails into the ticketing system for proper attention and follow-up\n● Documenting troubleshooting steps and updating the knowledge base if necessary\n● Monitoring security network alarms\n● Reporting and helping to monitor all security alerts, including firewalls, UPS alerts, and server alerts."
+    },
+    {
+      "jobTitle": "Help Desk Technician",
+      "jobCompany": "TherapeuticsMD",
+      "jobDate": "2019 - 2019, Boca Raton",
+      "jobSummary": "Assisting users with daily technical issues\n● Performing junior system admin tasks, including creating profiles for users through AD, MS365, Azure, and Five9\n● Assisting in onboarding new users by setting up workstations and configuring new tech equipment like Crestron and network servers\n● Checking the firewall and monitoring security network alerts\n● Helping to control and manage Five9 services for 300+ users\n● Assisting in the migration of 300+ users to an Intune environment"
+    }
+  ]
+}

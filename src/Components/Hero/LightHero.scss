@@ -1,0 +1,101 @@
+@use "../../styles/partials/typography" as *;
+@use "../../Styles/partials/variables" as *;
+@use "../../Styles/partials/global" as *;
+
+.light-hero {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw;
+  padding-top: 35vw;
+
+  &__title {
+    color: $Black;
+    font-family: Migra;
+    font-size: 6vw;
+    margin: 1rem 0 0 0;
+  }
+  &__heading {
+    color: $Black;
+    width: 100%;
+    font-family: Tusk;
+    font-size: 33vw;
+    font-weight: 400;
+    line-height: 33vw;
+    letter-spacing: 0.01em;
+    margin: 0.8rem 0;
+  }
+  &__description--right {
+    color: $Black;
+    font-family: Neue Montreal;
+    font-size: 3vw;
+    text-align: right;
+    margin: 0 1rem;
+  }
+  &__description {
+    color: $Black;
+    font-family: Neue Montreal;
+    font-size: 3vw;
+    width: 95%;
+    margin: 0 1rem;
+  }
+  &__button--resume {
+    border: 0.5vw solid $Black;
+    border-radius: 27px;
+    background-color: $White;
+    color: $Black;
+    margin: 1rem 0;
+    width: 35vw;
+    height: 15vw;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7vw;
+    line-height: 7vw;
+    text-align: center;
+  }
+
+  &__button--container {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__software {
+    width: 29vw;
+    animation: spin 8s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__button {
+    border-radius: 50%;
+    height: 24vw;
+    width: 24vw;
+    border: none;
+    background: none;
+
+    &--text {
+      position: relative;
+      bottom: 24vw;
+      left: 6vw;
+      color: white;
+      background: black;
+      border-radius: 50%;
+      height: 18vw;
+      width: 18vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Neue Montreal;
+      font-size: 3vw;
+    }
+  }
+}

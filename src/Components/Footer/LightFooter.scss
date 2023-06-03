@@ -1,0 +1,27 @@
+@use "../../styles/partials/typography" as *;
+@use "../../Styles/partials/variables" as *;
+@use "../../Styles/partials/global" as *;
+
+.light-footer {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem auto 0;
+  border: 1px solid $Black;
+  border-radius: 0.5rem;
+  height: 10vw;
+  bottom: 1rem;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__title {
+    font-family: Migra;
+    color: $Black;
+    font-size: 6vw;
+  }
+  &__imgs {
+    height: 8vw;
+  }
+}

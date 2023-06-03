@@ -1,0 +1,70 @@
+@use "../../styles/partials/typography" as *;
+@use "../../Styles/partials/variables" as *;
+@use "../../Styles/partials/global" as *;
+
+.light-about {
+  margin-top: 5vw;
+  padding: 0 5vw;
+
+  &__heading {
+    color: $Black;
+    font-family: Tusk;
+    font-size: 33vw;
+    font-weight: 400;
+    line-height: 33vw;
+    letter-spacing: 0.01em;
+    top: 5vh;
+    margin: 2rem 0rem;
+  }
+
+  &__img {
+    width: 50vw;
+    height: 50vw;
+    border: 0.2vw solid $Black;
+    border-radius: 50%;
+    padding: 1vw;
+
+    &-container {
+      padding-top: 25vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__job-title {
+    color: $Black;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7vw;
+    line-height: 7vw;
+    margin: 2vw 0;
+  }
+  &__job-company {
+    color: black;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5vw;
+    line-height: 4vw;
+    margin: 2vw 0;
+  }
+  &__job-date {
+    color: $Black;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4vw;
+    line-height: 4vw;
+    margin: 2vw 0;
+  }
+  &__job-summary {
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vw;
+    line-height: 4vw;
+    color: $Black;
+  }
+}
