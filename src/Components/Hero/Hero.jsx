@@ -24,20 +24,29 @@ const Hero = ({ backgroundMode }) => {
   }, [backgroundMode]);
 
   return (
-    <div className={`${heroClassName}`}>
-      <h3 className={`${heroClassName}__title`}>Innovative</h3>
-      <h1 className={`${heroClassName}__heading`}>
-        Full Stack <br />
-        Developer
-      </h1>
-      <p className={`${heroClassName}__description--right`}>
-        I AM A PASSIONATE DEVELOPER,
-      </p>
-      <p className={`${heroClassName}__description`}>
-        I LEVERAGE MY SKILLS AND EXPERIENCE IN TECHNOLOGY TO CRAFT INNOVATIVE
-        AND EFFICIENT SOLUTIONS FOR REAL-WORLD PROBLEMS, ULTIMATELY AIMING TO
-        HELP PEOPLE EFFECTIVELY.
-      </p>
+    <div id="hero" className={`${heroClassName}`}>
+      <div className={`${heroClassName}__text`}>
+        <div className={`${heroClassName}__title--container`}>
+          <h3 className={`${heroClassName}__title`}>Innovative</h3>
+          <h1 className={`${heroClassName}__heading`}>
+            FULL STACK <br />
+            Developer
+          </h1>
+        </div>
+        <div className={`${heroClassName}__rightside`}>
+          <p className={`${heroClassName}__description`}>
+            I AM A PASSIONATE DEVELOPER, I LEVERAGE MY SKILLS AND EXPERIENCE IN
+            TECHNOLOGY TO CRAFT INNOVATIVE AND EFFICIENT SOLUTIONS FOR
+            REAL-WORLD PROBLEMS, ULTIMATELY AIMING TO HELP PEOPLE EFFECTIVELY.
+          </p>
+          <button
+            className={`${heroClassName}__button--resume2`}
+            onClick={handleResumeClick}
+          >
+            RESUME
+          </button>
+        </div>
+      </div>
       <div className={`${heroClassName}__button--container`}>
         <button
           className={`${heroClassName}__button--resume`}

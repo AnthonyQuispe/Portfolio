@@ -35,20 +35,19 @@ const Nav = ({ backgroundModeClick }) => {
     <nav className={`${navClassName}`}>
       <div className={`${navClassName}__left`}>
         <div className={`${navClassName}__left-nameContainer`}>
-          <h3 className={`${navClassName}__left-name`}>Anthony Quispe</h3>
-        </div>
-        <div className={`${navClassName}__left-pagesContainer`}>
           <Link
-            to="about"
+            to="hero"
             spy={true}
             smooth={true}
             offset={-50}
             duration={500}
             className={`${navClassName}__left-page`}
-            onClick={() => handleScrollTo("about")}
+            onClick={() => handleScrollTo("hero")}
           >
-            About
+            <h3 className={`${navClassName}__left-name`}>Anthony Quispe</h3>
           </Link>
+        </div>
+        <div className={`${navClassName}__left-pagesContainer`}>
           <Link
             to="projects"
             spy={true}
@@ -60,6 +59,18 @@ const Nav = ({ backgroundModeClick }) => {
           >
             Projects
           </Link>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            className={`${navClassName}__left-page`}
+            onClick={() => handleScrollTo("about")}
+          >
+            About
+          </Link>
+
           <Link
             to="connect"
             spy={true}

@@ -5,26 +5,46 @@
       "projectLink": "https://swoosh-miami.web.app/ ",
       "projectRole": "Creator",
       "projectDate": "MAY 2023",
-      "projectSummary": "As a project manager and process owner at Conviva, I focused on improving the onboarding process to reduce new hire difficulties and minimize turnover. I collaborated with various teams, including Helpdesk, security, field tech, and EMR, to ensure a smooth implementation. By enhancing the process, my goal was to create a positive experience for new hires, increase satisfaction, and decrease turnover. Regular reporting to the business side highlighted the progress and positive impact on turnover rate.",
+      "projectSummary": "I developed a mobile web app for sports enthusiasts to track stats, play interactive games, and connect with others. It offers competitive opportunities, showcasing talented individuals beyond professional leagues.",
+      "projectPictures": "/ProjectsImages/Swoosh.png",
       "techStack": [
         "React",
         "JavaScript",
         "SCSS",
         "Firebase",
         "Firestore",
-        "Google MAPS API"
+        "Google MAPS API",
+        "Figma"
       ]
     },
     {
-      "projectTitle": "2YE  Ecommerce - Hackathon",
+      "projectTitle": "Harmony",
+      "projectLink": "https://github.com/AnthonyQuispe/UKG-Industry-Project",
+      "projectRole": "Backend Software Engineer",
+      "projectDate": "APR 2023",
+      "projectSummary": "Developed Harmony, an AI HR Assistant  Harmony (Human Resources Augmented Resource Management Optimization Navigator Yielder) streamlines HR processes, supports daily tasks, and fosters a harmonious work environment.",
+      "projectPictures": "/ProjectsImages/UKG.png",
+      "techStack": [
+        "React",
+        "SCSS",
+        "JavaScript",
+        "AWS",
+        "Chatgpt Open AI",
+        "Vercel"
+      ]
+    },
+    {
+      "projectTitle": "2YE | Clothing Store",
+      "projectLink": "https://github.com/AnthonyQuispe/2Ye-Apparel ",
       "projectRole": "Lead Software Engineer",
       "projectDate": "MAR 2023",
       "projectSummary": "Successfully led a team to a closely-won victory as the lead coder in a recent hackathon, showcasing exceptional technical acumen and strong leadership skills in delivering a responsive e-commerce website within the six-hour competition timeframe.",
+      "projectPictures": "/ProjectsImages/2YE.png",
       "techStack": [
         "HTML",
         "SCSS",
         "JavaScript",
-        "Firebase",
+        "Vercel",
         "Kanye West Quote API"
       ]
     }

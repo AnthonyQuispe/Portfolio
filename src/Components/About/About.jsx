@@ -9,6 +9,7 @@ const Connect = ({ backgroundMode }) => {
   const [aboutClassName, setAboutClassName] = useState("dark-about");
   const [jobData, setJobData] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
+  const [isCartoon, setIsCartoon] = useState(false); // Track the image version
 
   useEffect(() => {
     setAboutClassName(backgroundMode ? "dark-about" : "light-about");
@@ -27,9 +28,9 @@ const Connect = ({ backgroundMode }) => {
     setIsMobile(isMobileDevice);
   }, []);
 
-  const handleImageClick = (e) => {
+  const handleImageClick = () => {
     if (isMobile) {
-      e.target.src = AnthonyCartoon;
+      setIsCartoon((prevIsCartoon) => !prevIsCartoon);
     }
   };
 
@@ -37,7 +38,7 @@ const Connect = ({ backgroundMode }) => {
     <div id="about" className={`${aboutClassName}`}>
       <div className={`${aboutClassName}__img-container`}>
         <img
-          src={Anthony}
+          src={isCartoon ? AnthonyCartoon : Anthony}
           alt="Me"
           className={`${aboutClassName}__img`}
           onClick={handleImageClick}

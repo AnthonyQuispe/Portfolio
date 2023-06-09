@@ -1,18 +1,39 @@
 @use "../../styles/partials/typography" as *;
 @use "../../Styles/partials/variables" as *;
 @use "../../Styles/partials/global" as *;
+@use "../../Styles/partials/mixins" as *;
 
 .dark-hero {
   display: flex;
   flex-direction: column;
   padding: 0 5vw;
   padding-top: 35vw;
+  @include tablet {
+    padding-top: 10vw;
+  }
 
+  &__text {
+    @include tablet {
+      display: flex;
+    }
+  }
+  &__rightside {
+    @include tablet {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
   &__title {
     color: $Gold;
     font-family: Migra;
     font-size: 6vw;
     margin: 1rem 0 0 0;
+    @include tablet {
+      font-size: 3vw;
+    }
   }
   &__heading {
     color: $OffWhite;
@@ -23,13 +44,13 @@
     line-height: 33vw;
     letter-spacing: 0.01em;
     margin: 0.8rem 0;
-  }
-  &__description--right {
-    color: $White;
-    font-family: Neue Montreal;
-    font-size: 3vw;
-    text-align: right;
-    margin: 0 1rem;
+    @include tablet {
+      width: unset;
+      font-size: 16vw;
+      line-height: 16vw;
+      letter-spacing: 0.06em;
+      margin: 0.8rem 0;
+    }
   }
   &__description {
     color: $White;
@@ -37,6 +58,11 @@
     font-size: 3vw;
     width: 95%;
     margin: 0 1rem;
+
+    @include tablet {
+      font-size: 2.5vw;
+      margin: 2rem 1rem 0 1rem;
+    }
   }
   &__button--resume {
     border: 0.5vw solid $White;
@@ -52,6 +78,18 @@
     line-height: 7vw;
     text-align: center;
     color: $Gold;
+
+    @include tablet {
+      width: 24vw;
+      height: 7vw;
+      font-size: 4vw;
+      line-height: 4vw;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: unset;
+    }
   }
 
   &__button--container {
@@ -59,11 +97,18 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    @include tablet {
+      margin: unset;
+      display: none;
+    }
   }
 
   &__software {
     width: 29vw;
     animation: spin 8s linear infinite;
+    @include tablet {
+      display: none;
+    }
   }
 
   @keyframes spin {
@@ -81,6 +126,9 @@
     width: 24vw;
     border: none;
     background: none;
+    @include tablet {
+      display: none;
+    }
 
     &--text {
       position: relative;
@@ -96,6 +144,43 @@
       justify-content: center;
       font-family: Neue Montreal;
       font-size: 3vw;
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  &__title--container {
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__button--resume2 {
+    display: none;
+    border: 0.5vw solid $White;
+    border-radius: 27px;
+    background-color: $Black;
+    margin: 1rem 0;
+    width: 35vw;
+    height: 15vw;
+    font-family: "Neue Montreal";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7vw;
+    line-height: 7vw;
+    text-align: center;
+    color: $Gold;
+
+    @include tablet {
+      width: 24vw;
+      height: 7vw;
+      font-size: 4vw;
+      line-height: 4vw;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: unset;
     }
   }
 }
