@@ -27,12 +27,14 @@
     font-style: normal;
     font-weight: 500;
     font-size: 3vw;
-    line-height: 4vw;
+    line-height: 3vw;
     color: #efdcc9;
 
     @include tablet {
       margin: unset;
       padding: 1vw 2vw;
+      font-size: 2vw;
+      line-height: 2vw;
     }
   }
 
@@ -43,13 +45,14 @@
     font-weight: 400;
     line-height: 33vw;
     letter-spacing: 0.01em;
-
+    top: 5vh;
+    margin: 2rem 0rem;
+    padding-top: 20vw;
     @include tablet {
       width: unset;
       font-size: 16vw;
       line-height: 16vw;
       letter-spacing: 0.06em;
-
       position: sticky;
       top: 10vw;
       padding: 20px 20px 0 0;
@@ -88,10 +91,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     @include tablet {
-      font-size: 5vw;
-      line-height: 5vw;
+      font-size: 4vw;
+      line-height: 4vw;
     }
   }
   &__project-role {
@@ -102,8 +104,8 @@
     font-size: 5vw;
     line-height: 5vw;
     @include tablet {
-      font-size: 3vw;
-      line-height: 3vw;
+      font-size: 2vw;
+      line-height: 2vw;
     }
   }
   &__containers {
@@ -127,12 +129,12 @@
     font-style: normal;
     font-weight: 500;
     font-size: 3vw;
-    line-height: 4vw;
+    line-height: 3vw;
     color: $White;
     margin: 2vw 0;
 
     @include tablet {
-      font-size: 2.5vw;
+      font-size: 2.2vw;
     }
   }
   &__project-stack {
@@ -145,7 +147,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 3vw;
-    line-height: 4vw;
+    line-height: 3vw;
     color: $White;
 
     @include tablet {
@@ -162,7 +164,8 @@
     margin: 5vw 0 10vw 0;
 
     @include tablet {
-      width: 100%;
+      width: auto;
+      height: 40vw;
     }
 
     &--container {

@@ -11,14 +11,17 @@
   @include tablet {
     padding-top: 10vw;
   }
+  @include desktop {
+    padding-top: 10vw;
+  }
 
   &__text {
-    @include tablet {
+    @include desktop {
       display: flex;
     }
   }
   &__rightside {
-    @include tablet {
+    @include desktop {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -31,7 +34,7 @@
     font-family: Migra;
     font-size: 6vw;
     margin: 1rem 0 0 0;
-    @include tablet {
+    @include desktop {
       font-size: 3vw;
     }
   }
@@ -44,7 +47,7 @@
     line-height: 33vw;
     letter-spacing: 0.01em;
     margin: 0.8rem 0;
-    @include tablet {
+    @include desktop {
       width: unset;
       font-size: 16vw;
       line-height: 16vw;
@@ -58,8 +61,7 @@
     font-size: 3vw;
     width: 95%;
     margin: 0 1rem;
-
-    @include tablet {
+    @include desktop {
       font-size: 2.5vw;
       margin: 2rem 1rem 0 1rem;
     }
@@ -79,7 +81,7 @@
     text-align: center;
     color: $Gold;
 
-    @include tablet {
+    @include desktop {
       width: 24vw;
       height: 7vw;
       font-size: 4vw;
@@ -97,7 +99,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    @include tablet {
+    @include desktop {
       margin: unset;
       display: none;
     }
@@ -106,7 +108,7 @@
   &__software {
     width: 29vw;
     animation: spin 8s linear infinite;
-    @include tablet {
+    @include desktop {
       display: none;
     }
   }
@@ -126,7 +128,7 @@
     width: 24vw;
     border: none;
     background: none;
-    @include tablet {
+    @include desktop {
       display: none;
     }
 
@@ -144,13 +146,13 @@
       justify-content: center;
       font-family: Neue Montreal;
       font-size: 3vw;
-      @include tablet {
+      @include desktop {
         display: none;
       }
     }
   }
   &__title--container {
-    @include tablet {
+    @include desktop {
       width: 100%;
     }
   }
@@ -171,7 +173,7 @@
     text-align: center;
     color: $Gold;
 
-    @include tablet {
+    @include desktop {
       width: 24vw;
       height: 7vw;
       font-size: 4vw;

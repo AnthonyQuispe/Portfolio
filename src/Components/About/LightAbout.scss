@@ -1,10 +1,14 @@
 @use "../../styles/partials/typography" as *;
 @use "../../Styles/partials/variables" as *;
 @use "../../Styles/partials/global" as *;
+@use "../../Styles/partials/mixins" as *;
 
 .light-about {
   margin-top: 5vw;
   padding: 0 5vw;
+  @include tablet {
+    display: flex;
+  }
 
   &__heading {
     color: $Black;
@@ -15,6 +19,23 @@
     letter-spacing: 0.01em;
     top: 5vh;
     margin: 2rem 0rem;
+    @include tablet {
+      position: sticky;
+      top: 49vw;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(0);
+      z-index: 1;
+      width: unset;
+      font-size: 16vw;
+      line-height: 16vw;
+      letter-spacing: 0.04em;
+    }
+
+    &--container {
+      @include tablet {
+        padding-right: 20px;
+      }
+    }
   }
 
   &__img {
@@ -24,11 +45,27 @@
     border-radius: 50%;
     padding: 1vw;
 
+    @include tablet {
+      width: 25vw;
+      height: 25vw;
+      padding: unset;
+    }
+
     &-container {
-      padding-top: 25vw;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+  &__left--container {
+    padding-top: 25vw;
+    @include tablet {
+      padding-top: unset;
+      position: sticky;
+      top: 8vw;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(0);
+      z-index: 1;
     }
   }
 
@@ -40,6 +77,12 @@
     font-size: 7vw;
     line-height: 7vw;
     margin: 2vw 0;
+    @include tablet {
+      font-size: 4vw;
+      line-height: 4vw;
+      margin: unset;
+      padding: 0.3vw 0;
+    }
   }
   &__job-company {
     color: black;
@@ -49,6 +92,11 @@
     font-size: 5vw;
     line-height: 4vw;
     margin: 2vw 0;
+    @include tablet {
+      font-size: 2vw;
+      line-height: 1vw;
+      margin: unset;
+    }
   }
   &__job-date {
     color: $Black;
@@ -58,6 +106,11 @@
     font-size: 4vw;
     line-height: 4vw;
     margin: 2vw 0;
+    @include tablet {
+      font-size: 2vw;
+      line-height: 2vw;
+      margin: unset;
+    }
   }
   &__job-summary {
     font-family: "Neue Montreal";
@@ -67,5 +120,19 @@
     line-height: 4vw;
     color: $Black;
     margin-bottom: 5vw;
+    @include tablet {
+      font-size: 2.2vw;
+      margin: 2vw 0;
+    }
+  }
+  &__job-containers {
+    @include tablet {
+      width: 59%;
+    }
+  }
+  &__job-container {
+    @include tablet {
+      margin: 3vw 0 13vw 0;
+    }
   }
 }

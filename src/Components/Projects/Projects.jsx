@@ -13,8 +13,6 @@ const Connect = ({ backgroundMode }) => {
   }, [backgroundMode]);
 
   useEffect(() => {
-    // Simulated asynchronous fetch operation
-    // Replace this with your actual fetch logic
     setTimeout(() => {
       setProjectsData(projectList.projects);
     }, 0);

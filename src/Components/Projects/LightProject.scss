@@ -27,12 +27,14 @@
     font-style: normal;
     font-weight: 500;
     font-size: 3vw;
-    line-height: 4vw;
+    line-height: 3vw;
     color: $Black;
 
     @include tablet {
       margin: unset;
       padding: 1vw 2vw;
+      font-size: 2vw;
+      line-height: 2vw;
     }
   }
 
@@ -51,7 +53,6 @@
       font-size: 16vw;
       line-height: 16vw;
       letter-spacing: 0.06em;
-
       position: sticky;
       top: 10vw;
       padding: 20px 20px 0 0;
@@ -91,8 +92,8 @@
     align-items: center;
     justify-content: space-between;
     @include tablet {
-      font-size: 5vw;
-      line-height: 5vw;
+      font-size: 4vw;
+      line-height: 4vw;
     }
   }
 
@@ -102,10 +103,10 @@
     font-style: normal;
     font-weight: 500;
     font-size: 5vw;
-    line-height: 4vw;
+    line-height: 5vw;
     @include tablet {
-      font-size: 3vw;
-      line-height: 3vw;
+      font-size: 2vw;
+      line-height: 2vw;
     }
   }
   &__containers {
@@ -129,12 +130,12 @@
     font-style: normal;
     font-weight: 500;
     font-size: 3vw;
-    line-height: 4vw;
+    line-height: 3vw;
     color: $Black;
     margin: 2vw 0;
 
     @include tablet {
-      font-size: 2.5vw;
+      font-size: 2.2vw;
     }
   }
   &__project-stack {
@@ -142,12 +143,12 @@
     margin: 2vw 2vw 2vw 0;
     background: rgba(217, 217, 217, 0.2);
     border: 0.5vw solid black;
-    border-radius: 27px;
+    border-radius: 4.4vw;
     font-family: "Neue Montreal";
     font-style: normal;
     font-weight: 500;
     font-size: 3vw;
-    line-height: 4vw;
+    line-height: 3vw;
     color: $Black;
 
     @include tablet {
@@ -163,7 +164,8 @@
     margin: 5vw 0 10vw 0;
 
     @include tablet {
-      width: 100%;
+      width: auto;
+      height: 40vw;
     }
 
     &--container {
