@@ -96,28 +96,28 @@ const Nav = ({ backgroundModeClick }) => {
           <p className={`${navClassName}__right-mode`}>Mode</p>
         </div>
         <div className={`${navClassName}__right-colorContainer`}>
-          <Link to={"https://www.linkedin.com/in/anthonyqs/"}>
+          <a href="https://www.linkedin.com/in/anthonyqs/">
             <img
               className={`${navClassName}__editor`}
               src={navClassName === "dark-nav" ? DarkLinkedin : LightLinkedin}
               alt="Linkedin icon"
             />
-          </Link>
-          <Link to={"https://github.com/AnthonyQuispe"}>
+          </a>
+          <a href="https://github.com/AnthonyQuispe">
             <img
               className={`${navClassName}__editor`}
               src={navClassName === "dark-nav" ? Github : LightGithub}
               alt="Github icon"
             />
-          </Link>
+          </a>
 
-          <Link to={"https://twitter.com/AnthonysQuispe"}>
+          <a href="https://twitter.com/AnthonysQuispe">
             <img
               className={`${navClassName}__editor`}
               src={navClassName === "dark-nav" ? Twitter : LightTwitter}
               alt="Twitter icon"
             />
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
